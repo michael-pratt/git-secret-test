@@ -1,6 +1,4 @@
-
 pipeline {
-
     environment {
         gpg_secret = credentials("gpg-secret")
         gpg_trust = credentials("gpg-trust")
