@@ -18,8 +18,7 @@ pipeline {
             steps {
                 sh """
                     cd $WORKSPACE
-                    git init
-                    git-secret reveal -p '$gpg_passphrase'
+                    git secret cat dbpassword.txt
                 """
             }
         }
